@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #menu{
+            height: 50px;
+            width: 100%;
+            background-color: blue;
+        }
+        .dugme{
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid aqua;
+            color: white;
+            display: inline-block;
+        }
+        #container{
+            width: 640px;
+            height: 640px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #text{
+            height: 120px;
+            width: 640px;
+            background-color: blue;
+            color: white;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #velikaSlika{
+            height: 480px;
+            width: 640px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("slika1.jpg");
+        }
+        .malaslika{
+            height: 40px;
+            width: 60px;
+        }
+        #slika1{
+            background-image: url("slika1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table, tr, td{
+            border: 0px;
+        }
+        #slika2{
+            background-image: url("slika2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika3{
+            background-image: url("slika3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika4{
+            background-image: url("slika4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika5{
+            background-image: url("slika5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika6{
+            background-image: url("slika6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika7{
+            background-image: url("slika7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika8{
+            background-image: url("slika8.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika9{
+            background-image: url("slika9.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #slika10{
+            background-image: url("slika10.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".malaslika").click(function(){
+                $("#velikaSlika").css("background-image", $(this).css("background-image"));
+            });
+            $("#slika1").click(function(){
+                document.getElementById("text").innerHTML =  "Sedam svetskih čuda starog sveta je skup arhitektonskih dela koje su stari Grci, naročito u helenističkoj epohi, smatrali vrhuncem ljudske kreativnosti i genijalnosti. Međutim, od ovih sedam čuda još samo kompleks velikih piramida u Gizi i dan danas postoji."
+            });
+            $("#slika2").click(function(){
+                document.getElementById("text").innerHTML =  "Piramide u Gizi ili Velike piramide su jedno od sedam svetskih čuda. Nalaze se u Egiptu, blizu Kaira na platou Gize. One su najstarije i jedino do danas očuvano svetsko čudo. Velike piramide čine tri monumentalne građevine koje se razlikuju od ostalih egipatskih piramida rasutih po pustinji Sahare. Nalaze se u gradu Giza, nekropoli antičkog Memfisa (danas je to predgrađe Kaira)."
+            });
+            $("#slika10").click(function(){
+                document.getElementById("text").innerHTML =  "Piramide u Gizi ili Velike piramide su jedno od sedam svetskih čuda. Nalaze se u Egiptu, blizu Kaira na platou Gize. One su najstarije i jedino do danas očuvano svetsko čudo. Velike piramide čine tri monumentalne građevine koje se razlikuju od ostalih egipatskih piramida rasutih po pustinji Sahare. Nalaze se u gradu Giza, nekropoli antičkog Memfisa (danas je to predgrađe Kaira)."
+            });
+            $("#slika3").click(function(){
+                document.getElementById("text").innerHTML =  "Kolos sa Rodosa je jedno od sedam svetskih čuda starog sveta. Iako je od vremena izgradnje ove ogromne statue do njenog uništenja proteklo svega 56 godina, ova svojevrsna i neponovljiva građevina svakako je zaslužila svoje mesto među svetskim čudima. Kolos sa Rodosa nije samo gigantska statua - ona je simbol jedinstva naroda koji je naseljavao Rodos, prelepo mediteransko ostrvo."
+            });
+            $("#slika4").click(function(){
+                document.getElementById("text").innerHTML =  "Svetionik u Aleksandriji jedno je od sedam svetskih čuda. Napravljen je između 300. i 280. p. n. e. na poluostrvu Farosu. Napravio ga je grčki arhitekta Sostrat. Od svih svetskih čuda, jedino je svetionik u Aleksandriji, pored svoje arhitektonske čudesnosti, imao i praktičnu namenu — omogućavao je brodovima bezbedan povratak u Veliku luku Aleksandrije. U arhitektonskom smislu, ovaj svetionik je ipak imao najveći značaj — to je bila najviša građevina na svetu u to vreme i njena svetlost se mogla videti na 50 km od aleksandrijske obale."
+            });
+            $("#slika9").click(function(){
+                document.getElementById("text").innerHTML =  "Svetionik u Aleksandriji jedno je od sedam svetskih čuda. Napravljen je između 300. i 280. p. n. e. na poluostrvu Farosu. Napravio ga je grčki arhitekta Sostrat. Od svih svetskih čuda, jedino je svetionik u Aleksandriji, pored svoje arhitektonske čudesnosti, imao i praktičnu namenu — omogućavao je brodovima bezbedan povratak u Veliku luku Aleksandrije. U arhitektonskom smislu, ovaj svetionik je ipak imao najveći značaj — to je bila najviša građevina na svetu u to vreme i njena svetlost se mogla videti na 50 km od aleksandrijske obale."
+            });
+            $("#slika5").click(function(){
+                document.getElementById("text").innerHTML =  "Mauzolej u Halikarnasu, jedan od sedam svetskih čuda, je bio nadgrobni spomenik karijskog kralja Mauzola. Bio je izgrađen na površini od 30 x 40 m, a visok 45 m. Slično Velikoj piramidi u Egiptu, i ovo mesto predstavlja grob jednog antičkog vladara. Ipak, Mauzolej se razlikuje od piramida po mnogo čemu - između ostalog, lepota građevine je ta koja je, više nego njena veličina, zadivila milione ljudi od vremena izgradnje pa sve do danas. Mauzolej se nalazio u gradu Bodrumu (u starogrčko doba Halikarnas), na obali Egejskog mora, u jugozapadnom delu današnje Turske."
+            });
+            $("#slika6").click(function(){
+                document.getElementById("text").innerHTML =  "Artemidin hram u Efesu (grč. Artemision) je bio grčki hram posvećen boginji Artemidi, podignut oko 550. p. n. e. Danas se od hrama mogu videti samo ostaci temelja i mesto na kojem se ovaj hram nekada nalazio, nedaleko od turskog grada Selčuka i na oko 50 km od grada Izmira. Iako temelj hrama potiče još iz 7. veka p. n. e, građevina je konstruisana i podignuta 550. godine p. n. e. Novac za izgradnju velelepnog mermernog hrama izdvojio je lidijski kralj Krez, a hram je osmislio i projektovao grčki arhitekta Herosifron."
+            });
+            $("#slika7").click(function(){
+                document.getElementById("text").innerHTML =  "Statua Zevsa u Olimpiji je jedno od sedam svetskih čuda, posvećena je bogu Zevsu - vrhovnom bogu starih Grka u čiju čast su se održavale Olimpijske igre, a nalazila se na prostoru same Olimpije po kojoj su igre i dobile naziv. U vreme Olimpijskih igara prestajali su ratovi, a atlete iz Male Azije, Sirije, Egipta i Sicilije su dolazili da proslave Olimpijadu i obožavaju svog boga nad bogovima – Zevsa. Statua se nalazila u samom gradu Olimpiji, na zapadnoj obali današnje Grčke, oko 150 kilometara zapadno od Atine."
+            });
+            $("#slika8").click(function(){
+                document.getElementById("text").innerHTML =  "Viseći vrtovi iz Vavilona (takođe označavani i kao \"Semiramidini viseći vrtovi\"), su jedno od sedam svetskih čuda. Na osnovu mitova bili su izgrađeni za kraljicu Semiramidu, koja je poreklom iz zelene Medije i zbog toga je kralj Navukodonosor II naredio oko 600. p. n. e. da se izgrade viseći vrtovi na terasama palate da bi je oraspoložio. O njihovoj egzistenciji ne postoje verodostojni dokazi. Viseće vrtove su opisivali uglavnom starogrčki istoričari Strabon i Diodor Sicilijski."
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Foto galerija</h1>
+        <div id="menu">
+            <div class="dugme">Pocetna</div>
+            <div class="dugme">O autoru</div>
+            <div class="dugme">Uputstvo</div>
+        </div>
+    </header>
+    <div id="container">
+        <div>
+            <p id="text">
+                Sedam svetskih čuda starog sveta je skup arhitektonskih dela koje su stari Grci, naročito u helenističkoj epohi, smatrali vrhuncem ljudske kreativnosti i genijalnosti. Međutim, od ovih sedam čuda još samo kompleks velikih piramida u Gizi i dan danas postoji.
+            </p>
+        </div>
+        <div id="velikaSlika"></div>
+        <table>
+            <tr>
+                <td><div class="malaslika" id="slika1"></div></td>
+                <td><div class="malaslika" id="slika2"></div></td>
+                <td><div class="malaslika" id="slika3"></div></td>
+                <td><div class="malaslika" id="slika4"></div></td>
+                <td><div class="malaslika" id="slika5"></div></td>
+                <td><div class="malaslika" id="slika6"></div></td>
+                <td><div class="malaslika" id="slika7"></div></td>
+                <td><div class="malaslika" id="slika8"></div></td>
+                <td><div class="malaslika" id="slika9"></div></td>
+                <td><div class="malaslika" id="slika10"></div></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
